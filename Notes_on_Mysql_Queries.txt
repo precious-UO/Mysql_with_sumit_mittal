@@ -1,3 +1,17 @@
 -- MYSQL BY SUMIT MITTAL -------------------------------------------------
 
+DATABASE
+    A database is a collection of data. It holds data in the form of tables. A table is a way of storing data in the form of rows and columns.
+It is similar to excel spreadsheet. Apart from storing data, it also gives you the capability to access and manipulate data.
+There are two types of databases: Relational Database and Non-relational Database.
+In relational database data is stored in the form of rows and columns and multiple tables have some form of
+relationships between them. Databases in this category are MYSQL, SQL server, PostreSQL, SQLite, MariaDB, etc.
+In Non-relational database (NOSQL), the tables are different and has no form of relationship between themselves.
+Databases in this category are Hbase, mongodb, cassandra, etc.
+
+    SQL Stands for structured query language it is used to query or interact with databases. Update, interact or retrieve data in a database.
+Therefore MYSQL is a relational database which holds data, and SQL is a language used to interact with the database.
+
+
+
 1. CREATE:
