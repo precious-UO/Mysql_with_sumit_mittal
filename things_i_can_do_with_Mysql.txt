@@ -5,4 +5,6 @@
 5. Create a new table using the CREATE TABLE command.
 6. See the list of existing tables in a database using the SHOW TABLES command.
 7. See the structure of a table using the DESCRIBE table_name command or DESC for short.
-8. Delete an existing table using the DROP TABLE IF EXISTS command. 
+8. Delete an existing table using the DROP TABLE IF EXISTS command.
+9. See data inside the table using the SELECT command.
+10. 

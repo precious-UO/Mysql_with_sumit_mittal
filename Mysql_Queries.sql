@@ -20,4 +20,16 @@
 USE trendytech;
 
 -- =================================== CREATING TABLES AND INSERTING VALUES INTO THE TABLE ===============================================
+-- CREATE TABLE IF NOT EXISTS employee (
+	-- First_name VARCHAR(50),
+    -- Middle_name VARCHAR(50),
+    -- Last_name VARCHAR(50),
+    -- Age INT,
+    -- Salary INT,
+    -- Location VARCHAR(50)
+-- );
+
+
+SELECT *
+FROM employee;
 

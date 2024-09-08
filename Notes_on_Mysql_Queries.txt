@@ -1,4 +1,4 @@
--- MYSQL BY SUMIT MITTAL -----------------------------------------------------------------------------------------------------------------------------------------
+-- ----------------------------------------------- MYSQL BY SUMIT MITTAL -----------------------------------------------------------------------------------------------------------------------------------------
 
 DATABASE
     A database is a collection of data. It holds data in the form of tables. A table is a way of storing data in the form of rows and columns.
@@ -29,3 +29,4 @@ CRUD OPERATIONS
 6. SHOW TABLES: Shows you a list of existing tables inside the specified database.
 7. DESCRIBE/DESC table_name: Shows you the structure/schema of a specified table.
 8. DROP TABLE IF EXISTS table_name: Deletes an existing table.
+9. SELECT: Shows you the specified columns inside a table and the data they contain.
