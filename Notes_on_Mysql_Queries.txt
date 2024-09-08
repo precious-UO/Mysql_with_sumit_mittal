@@ -30,3 +30,6 @@ CRUD OPERATIONS
 7. DESCRIBE/DESC table_name: Shows you the structure/schema of a specified table.
 8. DROP TABLE IF EXISTS table_name: Deletes an existing table.
 9. SELECT: Shows you the specified columns inside a table and the data they contain.
+10. INSERT INTO table_name VALUES: This statement is used to insert values into a table.
+11. NOT NULL: Used as a constraint to ensure that a column dosen't have empty values.
+12. DEFAULT: Used to specify the default value a column should have if nothing is specified.

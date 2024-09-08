@@ -7,4 +7,4 @@
 7. See the structure of a table using the DESCRIBE table_name command or DESC for short.
 8. Delete an existing table using the DROP TABLE IF EXISTS command.
 9. See data inside the table using the SELECT command.
-10. 
+10. Insert values into a table using the INSERT statement.
