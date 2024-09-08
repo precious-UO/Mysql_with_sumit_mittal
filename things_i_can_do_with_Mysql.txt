@@ -1,3 +1,8 @@
-1. Create a new database
-2. Delete a database
-3. Create a new table
+1. See the list of existing databases using the SHOW DATABASE command.
+2. Specifies the database i want to use using the USE DATABASE command.
+3. Create a new database using the CREATE DATABASE command.
+4. Delete a database using the DROP DATABASE command.
+5. Create a new table using the CREATE TABLE command.
+6. See the list of existing tables in a database using the SHOW TABLES command.
+7. See the structure of a table using the DESCRIBE table_name command or DESC for short.
+8. Delete an existing table using the DROP TABLE IF EXISTS command. 
