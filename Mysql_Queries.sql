@@ -104,3 +104,49 @@ USE trendytech;
 
 -- ALTER TABLE employee
 -- ADD UNIQUE KEY(email);
+
+-- ================================================ FOREIGN KEY CONSTRAINTS ===============================================================
+-- CREATE TABLE IF NOT EXISTS students (
+	-- Student_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    -- Student_fname VARCHAR(50) NOT NULL,
+    -- Student_lname VARCHAR(50) NOT NULL,
+    -- Student_mname VARCHAR(50),
+    -- Student_email VARCHAR(100) UNIQUE KEY NOT NULL,
+    -- Student_phone VARCHAR(20) NOT NULL,
+    -- Student_alternate_phone VARCHAR(20),
+    -- Enrollment_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    -- Years_of_exp INT NOT NULL,
+    -- Student_company VARCHAR(50),
+    -- Batch_date VARCHAR(30) NOT NULL,
+    -- Source_of_joining VARCHAR(50) NOT NULL,
+    -- Location VARCHAR(50) NOT NULL
+-- );
+
+-- DESC students;
+
+-- INSERT INTO 
+-- students (Student_fname, Student_lname, Student_email, Student_phone, Years_of_exp, Student_company, Batch_date, Source_of_joining, Location)
+-- VALUES
+-- ('Rohit', 'Sharma', 'rohit@gmail.com', '9191919191', 6, 'Walmart', '5-02-2021', 'Linkedin', 'Bangalore'),
+-- ('Virat', 'Kohli', 'virat@gmail.com', '9292929292', 3, 'Flipkart', '5-02-2021', 'Linkedin', 'Hyderabad');
+
+-- INSERT INTO 
+-- students (Student_fname, Student_lname, Student_email, Student_phone, Years_of_exp, Batch_date, Source_of_joining, Location)
+-- VALUES
+-- ('Shikhar', 'Dhawan', 'shikhar@gmail.com', '9393939393', 12, '19-02-2021', 'Google', 'Bangalore');
+
+-- INSERT INTO 
+-- students (Student_fname, Student_lname, Student_email, Student_phone, Years_of_exp, Student_company, Batch_date, Source_of_joining, Location)
+-- VALUES
+-- ('Rahul', 'Dravid', 'rahul@gmail.com', '9494949494', 8, 'Walmart', '19-02-2021', 'Quora', 'Chennai');
+
+-- INSERT INTO 
+-- students (Student_fname, Student_lname, Student_email, Student_phone, Years_of_exp, Student_company, Batch_date, Source_of_joining, Location)
+-- VALUES
+-- ('Kapil', 'Dev', 'kapil@gmail.com', '9291292292', 15, 'Microsoft', '5-02-2021', 'Friend', 'Pune'),
+-- ('Brian', 'Lara', 'brian@gmail.com', '9291297292', 18, 'TCS', '5-02-2021', 'Youtube', 'Pune'),
+-- ('Carl', 'Hooper', 'carl@gmail.com', '9291297392', 20, 'Wipro', '19-02-2021', 'Youtube', 'Pune'),
+-- ('Saurabh', 'Ganguly', 'saurabh@gmail.com', '9291297492', 14, 'Wipro', '19-02-2021', 'Google', 'chennai');
+
+SELECT Student_fname, Student_lname, Student_email, Student_phone, Years_of_exp, Student_company, Batch_date, Source_of_joining, Location
+FROM students;

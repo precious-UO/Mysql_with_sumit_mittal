@@ -52,5 +52,8 @@ DML deals with changing the data. In DML, It consists of commands such as insert
 17. BINARY: By default MYSQL is case insensitive, to make it case sentitive, the BINARY keyword is used. when we use the BINARY keyword, it matches the value exactly as specified.
 18. AS: Used to rename column headers.
 19. UPDATE: Used to modify or make corrections on already existing data in a table.
-20. DELETE: Used to delete that meet specific conditions from a table.
+20. DELETE: Used to delete data that meet specific conditions from a table.
 21. ALTER: Used to update the structure of your table.
+22. TRUNCATE: Deletes data from a table by deleting the table and recreating it.
+23. FOREIGN KEY: A column or set of columns in a table that refers to the PRIMARY KEY of another table. It creates a relationship between data.
+24. 
