@@ -58,5 +58,49 @@ USE trendytech;
 -- FROM employee
 -- WHERE Age <= 28;
 
-
 -- ============================================== UPDATING VALUES IN A TABLE =====================================================
+
+-- UPDATE employee
+-- SET First_name = 'Maneesh', Last_name = 'Sinha'
+-- WHERE emp_id = 3;
+
+-- UPDATE employee
+-- SET First_name = 'Rajesh', Last_name = 'Sharma'
+-- WHERE emp_id = 1;
+
+-- UPDATE employee
+-- SET Age = 32, Salary = 30000
+-- WHERE emp_id = 3;
+
+-- UPDATE employee
+-- SET First_name = 'Kapil', Last_name = 'Sharma', Age = 30, Salary = 20000
+-- WHERE emp_id = 2;
+
+-- UPDATE employee
+-- SET Salary = Salary + 5000;
+
+-- UPDATE employee
+-- SET Location = 'Bangalore' 
+-- WHERE First_name = 'Kapil' And Last_name = 'Sharma';
+
+-- ============================================== DELETING VALUES IN A TABLE ======================================================
+
+ -- DELETE
+ -- FROM employee
+ -- WHERE emp_id = 3;
+ 
+-- ============================================= MODIFYING TABLE AND TABLE COLUMNS =================================================
+-- ALTER TABLE employee 
+-- ADD COLUMN Job_title VARCHAR(50) NOT NULL;
+
+-- ALTER TABLE employee
+-- DROP COLUMN Job_title;
+
+-- ALTER TABLE employee
+-- MODIFY COLUMN First_name VARCHAR(100);
+
+-- ALTER TABLE employee
+-- ADD COLUMN Email VARCHAR(100);
+
+-- ALTER TABLE employee
+-- ADD UNIQUE KEY(email);

@@ -22,6 +22,15 @@ CRUD OPERATIONS
 NOTE: MYSQL WON'T ALLOW YOU UPDATE OR DELETE WITHOUT THE WHERE STATEMENT. TO CORRECT THIS, CLICK ON EDIT, NEXT CLICK ON PREFERENCES, A NEW WINDOW WILL POP UP, 
 CLICK ON SQL EDITOR, SCROLL TO THE BOTTOM AND UNCHECK THE CHECK BOX THAT SAYS SAFE UPDATES(REJECTS UPDATES AND DELETES WITH NO RESTRICTION) THEN CLICK OK.
 FINALLY, CLICK ON RECONNECT TO SERVER.
+
+DDL VS DML
+DDL stands for data definition language and DML stands for data manipulation language.
+
+DDL statements are the ones that change the structure of the table. They consist of SQL commands that can be used 
+to define the database schema or alter it. It consists of commands such Create, Alter, Drop, etc.
+
+DML deals with changing the data. In DML, It consists of commands such as insert, update, delete, etc.
+
 ====================================================================================================================================================
 
 1. SHOW DATABASES: Gives you a list of existing databases.
@@ -43,3 +52,5 @@ FINALLY, CLICK ON RECONNECT TO SERVER.
 17. BINARY: By default MYSQL is case insensitive, to make it case sentitive, the BINARY keyword is used. when we use the BINARY keyword, it matches the value exactly as specified.
 18. AS: Used to rename column headers.
 19. UPDATE: Used to modify or make corrections on already existing data in a table.
+20. DELETE: Used to delete that meet specific conditions from a table.
+21. ALTER: Used to update the structure of your table.
