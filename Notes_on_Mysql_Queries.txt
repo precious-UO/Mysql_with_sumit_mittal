@@ -31,6 +31,8 @@ to define the database schema or alter it. It consists of commands such Create, 
 
 DML deals with changing the data. In DML, It consists of commands such as insert, update, delete, etc.
 
+Constraints are used to limit the type of data that goes into a table. This ensures the accuracy and reliability of the data is maintained.
+If there is any violation, then the action is aborted.
 ====================================================================================================================================================
 
 1. SHOW DATABASES: Gives you a list of existing databases.

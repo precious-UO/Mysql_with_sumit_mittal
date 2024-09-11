@@ -148,5 +148,38 @@ USE trendytech;
 -- ('Carl', 'Hooper', 'carl@gmail.com', '9291297392', 20, 'Wipro', '19-02-2021', 'Youtube', 'Pune'),
 -- ('Saurabh', 'Ganguly', 'saurabh@gmail.com', '9291297492', 14, 'Wipro', '19-02-2021', 'Google', 'chennai');
 
-SELECT Student_fname, Student_lname, Student_email, Student_phone, Years_of_exp, Student_company, Batch_date, Source_of_joining, Location
-FROM students;
+-- CREATE TABLE IF NOT EXISTS courses (
+	-- course_id INT PRIMARY KEY NOT NULL,
+    -- course_name VARCHAR(50) NOT NULL,
+    -- course_duration_months INT NOT NULL,
+    -- course_fee INT NOT NULL
+-- );
+
+-- INSERT INTO courses
+-- VALUES
+-- (1, 'Big data', 6, 50000),
+-- (2, 'Web development', 3, 20000),
+-- (3, 'Data science', 6, 40000),
+-- (4, 'Devops', 1, 10000);
+-- SELECT Student_fname, Student_lname, Student_email, Student_phone, Years_of_exp, Student_company, Batch_date, Source_of_joining, Location
+-- FROM students;
+
+-- ALTER TABLE students ADD COLUMN Selected_course INT NOT NULL DEFAULT 1;
+
+-- UPDATE students
+-- SET Selected_course = 2
+-- WHERE Student_id = 1;
+
+-- UPDATE students
+-- SET Selected_course = 3
+-- WHERE Student_id = 3;
+
+-- ALTER TABLE students ADD CONSTRAINT fk_selected_course FOREIGN KEY (selected_course) REFERENCES courses (course_id);
+-- DESC students;
+
+-- SELECT Student_fname, Student_lname, Student_email, Student_phone, Selected_course, Years_of_exp, Student_company, Batch_date, Source_of_joining, Location
+-- FROM students; 
+
+-- SELECT *
+-- FROM courses;
+
