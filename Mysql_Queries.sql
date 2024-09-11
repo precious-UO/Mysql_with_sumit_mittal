@@ -58,6 +58,92 @@ USE trendytech;
 -- FROM employee
 -- WHERE Age <= 28;
 
+-- SHOW TABLES;
+-- SELECT *
+-- FROM students;
+
+-- DISTINCT
+-- SELECT DISTINCT location
+-- FROM students;
+
+-- SELECT DISTINCT Student_company
+-- FROM students;
+
+-- SELECT DISTINCT Source_of_joining
+-- FROM students;
+
+
+--  ORDER BY
+-- SELECT Student_fname, Student_lname, Student_email, Student_phone, Years_of_exp, Student_company, Batch_date, Source_of_joining, Location
+-- FROM students
+-- ORDER BY Years_of_exp;
+
+-- SELECT Student_fname
+-- FROM students
+-- ORDER BY Years_of_exp;
+
+-- SELECT Student_fname, Years_of_exp
+-- FROM students
+-- ORDER BY Years_of_exp DESC;
+
+
+-- LIMIT
+-- SELECT Student_fname, Student_lname, Student_email, Student_phone, Years_of_exp, Student_company, Batch_date, Source_of_joining, Location
+-- FROM students
+-- ORDER BY Years_of_exp DESC
+-- LIMIT 3;
+
+-- SELECT Source_of_joining
+-- FROM students
+-- ORDER BY enrollmemnt_date DESC
+-- LIMIT 5;
+
+-- SELECT *
+-- FROM students;
+
+-- SELECT Student_fname, Enrollment_date, Years_of_exp, Student_company, Batch_date, Source_of_joining, Location
+-- FROM students
+-- ORDER BY Enrollment_date DESC
+-- LIMIT 3;
+
+-- SELECT *
+-- FROM students
+-- ORDER BY Enrollment_date
+-- LIMIT 0,3; (0 Represents the first row, so this will bring out rows starting from the first row to the third row. it is equivalent to LIMIT 3)
+
+-- SELECT *
+-- FROM students
+-- ORDER BY Enrollment_date
+-- LIMIT 3, 2; (3 Represents the fourth row, so this will bring out rows starting from the fourth row and an additional one row).
+
+
+-- LIKE
+-- SELECT Student_id, Enrollment_date, Selected_course, Student_fname, Years_of_exp, Student_company, Batch_date, Source_of_joining, Location
+-- FROM students
+-- WHERE Student_fname
+-- LIKE '%ra%';
+
+-- LIKE
+-- SELECT Student_id, Enrollment_date, Selected_course, Student_fname, Years_of_exp, Student_company, Batch_date, Source_of_joining, Location
+-- FROM students
+-- WHERE Student_fname
+-- LIKE 'ra%';
+
+-- LIKE
+-- SELECT Student_id, Enrollment_date, Selected_course, Student_fname, Years_of_exp, Student_company, Batch_date, Source_of_joining, Location
+-- FROM students
+-- WHERE Student_fname
+-- LIKE '%at';
+
+-- LIKE
+-- SELECT Student_id, Enrollment_date, Selected_course, Student_fname, Years_of_exp, Student_company, Batch_date, Source_of_joining, Location
+-- FROM students
+-- WHERE Student_fname
+-- LIKE '_a%'; 
+
+
+
+
 -- ============================================== UPDATING VALUES IN A TABLE =====================================================
 
 -- UPDATE employee
@@ -182,4 +268,5 @@ USE trendytech;
 
 -- SELECT *
 -- FROM courses;
+
 

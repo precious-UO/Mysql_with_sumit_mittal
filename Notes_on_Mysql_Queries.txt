@@ -33,6 +33,14 @@ DML deals with changing the data. In DML, It consists of commands such as insert
 
 Constraints are used to limit the type of data that goes into a table. This ensures the accuracy and reliability of the data is maintained.
 If there is any violation, then the action is aborted.
+
+
+
+
+
+
+
+
 ====================================================================================================================================================
 
 1. SHOW DATABASES: Gives you a list of existing databases.
@@ -58,4 +66,11 @@ If there is any violation, then the action is aborted.
 21. ALTER: Used to update the structure of your table.
 22. TRUNCATE: Deletes data from a table by deleting the table and recreating it.
 23. FOREIGN KEY: A column or set of columns in a table that refers to the PRIMARY KEY of another table. It creates a relationship between data.
-24. 
+24. DISTINCT: Used to show unique values in a table. It shows the unique values and removes the duplicates.
+25. ORDER BY: Used to show data according to a specific order. By default, it sorts data in ascending order. otherwise specified.
+26. DESC: Short for descending. When it is used with ORDER BY, it tells sql to sort the order from the highest to the lowest.
+27. LIMIT: Used to specify the number of rows you want sql to bring out from a table.
+28. LIKE: Used to filter data that is to some extent similar to the specified condition.
+        %(percent sign): Tells sql to match any number of characters starting from 0 up.
+        _(underscore): Matches a single character.
+        \(Backslash): tells sql that it shouldn't consider any symbol that comes after it as a special character.
