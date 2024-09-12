@@ -379,3 +379,7 @@ FROM courses;
 -- SELECT Student_id, Student_fname, Student_lname, Years_of_exp, Student_company, Location, Source_of_joining
 -- FROM students
 -- WHERE Student_company = 'Walmart' OR Student_company = 'Flipkart' OR Student_company = 'Microsoft';
+
+-- SELECT Student_id, Student_fname, Student_lname, Years_of_exp, Student_company, Location, Source_of_joining
+-- FROM students
+-- WHERE Student_company IN ('Walmart','Flipkart', 'Microsoft');
