@@ -34,13 +34,6 @@ DML deals with changing the data. In DML, It consists of commands such as insert
 Constraints are used to limit the type of data that goes into a table. This ensures the accuracy and reliability of the data is maintained.
 If there is any violation, then the action is aborted.
 
-
-
-
-
-
-
-
 ====================================================================================================================================================
 
 1. SHOW DATABASES: Gives you a list of existing databases.
@@ -74,3 +67,9 @@ If there is any violation, then the action is aborted.
         %(percent sign): Tells sql to match any number of characters starting from 0 up.
         _(underscore): Matches a single character.
         \(Backslash): tells sql that it shouldn't consider any symbol that comes after it as a special character.
+29. COUNT(): An aggregate function that counts and returns how many rows that are available in a table.
+30. GROUP BY(): An agrregate function that groups data based on certain condiitions.
+31. MIN(): Finds the minimum value in a specified column.
+32. MAX(): Finds the maximum value in a specified column.
+33. SUM(): Findds the sum total of all values in a column.
+34. AVG(): Finds the average of all values in a column.

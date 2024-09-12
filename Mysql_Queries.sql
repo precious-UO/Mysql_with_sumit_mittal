@@ -141,8 +141,47 @@ USE trendytech;
 -- WHERE Student_fname
 -- LIKE '_a%'; 
 
+-- ------------------- AGRREGATE FUNCTIONS -----------------------
+-- COUNT()
+-- SELECT COUNT(*)
+-- FROM students;
 
+-- SELECT COUNT(DISTINCT student_company)
+-- FROM students;
 
+-- SELECT COUNT(DISTINCT Location)
+-- FROM students;
+
+-- SELECT COUNT(DISTINCT Source_of_joining)
+-- FROM students;
+
+-- SELECT COUNT(*)
+-- FROM students
+-- WHERE batch_date LIKE '%-02-%';
+
+-- GROUP BY ------------------------------------
+-- SELECT Source_of_joining, COUNT(*)
+-- FROM students
+-- GROUP BY Source_of_joining;
+
+-- SELECT Location, COUNT(*)
+-- FROM students
+-- GROUP BY Location;
+
+-- SELECT Location, Source_of_joining, COUNT(*)
+-- FROM students
+-- GROUP BY Location, Source_of_joining;
+
+-- SELECT Batch_date, Selected_course, COUNT(*)
+-- FROM students
+-- GROUP BY Batch_date, Selected_course;
+
+-- MIN AND MAX ---------------------
+-- SELECT MIN(Years_of_exp)
+-- FROM students;
+
+-- SELECT MAX(Years_of_exp)
+-- FROM students;
 
 -- ============================================== UPDATING VALUES IN A TABLE =====================================================
 
@@ -169,11 +208,35 @@ USE trendytech;
 -- SET Location = 'Bangalore' 
 -- WHERE First_name = 'Kapil' And Last_name = 'Sharma';
 
+-- UPDATE courses
+-- SET course_duration_months = 6.5
+-- WHERE course_id = 1;
+
+-- UPDATE courses
+-- SET course_duration_months = 3.5
+-- WHERE course_id = 2;
+
+-- UPDATE courses
+-- SET Course_duration_months = 6
+-- WHERE Course_id = 3;
+
+-- UPDATE courses
+-- SET course_fee = 40000
+-- WHERE course_name = 'Web development';
+
+
+select *
+FROM courses;
+
 -- ============================================== DELETING VALUES IN A TABLE ======================================================
 
  -- DELETE
  -- FROM employee
  -- WHERE emp_id = 3;
+ 
+ -- DELETE
+ -- FROM courses
+ -- WHERE Course_id = 4;
  
 -- ============================================= MODIFYING TABLE AND TABLE COLUMNS =================================================
 -- ALTER TABLE employee 
@@ -191,7 +254,17 @@ USE trendytech;
 -- ALTER TABLE employee
 -- ADD UNIQUE KEY(email);
 
+-- ALTER TABLE courses 
+-- MODIFY COLUMN course_duration_months DECIMAL(3,1) NOT NULL;
+
+-- ALTER TABLE courses
+-- MODIFY COLUMN Changed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE NOW();
+
+-- select *
+-- FROM courses;
+
 -- ================================================ FOREIGN KEY CONSTRAINTS ===============================================================
+
 -- CREATE TABLE IF NOT EXISTS students (
 	-- Student_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     -- Student_fname VARCHAR(50) NOT NULL,
@@ -269,4 +342,40 @@ USE trendytech;
 -- SELECT *
 -- FROM courses;
 
+-- ================================================================ FILTERING DATA WITH LOGICAL OPERATORS =====================================================
 
+-- SELECT *
+-- FROM students
+-- WHERE Location = 'Bangalore';
+
+-- SELECT *
+-- FROM students
+-- WHERE Location != 'Bangalore';
+
+-- SELECT *
+-- FROM courses
+-- WHERE course_name LIKE '%data%';
+
+-- SELECT *
+-- FROM courses
+-- WHERE course_name NOT LIKE '%data%';
+
+-- SELECT Student_id, Student_fname, Student_lname, Years_of_exp, Student_company, Location, Source_of_joining
+-- FROM students
+-- WHERE Location = 'Bangalore' AND Source_of_joining = 'Linkedin' AND Years_of_exp < 8;
+
+-- SELECT Student_id, Student_fname, Student_lname, Years_of_exp, Student_company, Location, Source_of_joining
+-- FROM students
+-- WHERE Years_of_exp >= 8 AND Years_of_exp <= 12;
+
+-- SELECT Student_id, Student_fname, Student_lname, Years_of_exp, Student_company, Location, Source_of_joining
+-- FROM students
+-- WHERE Years_of_exp BETWEEN 8 AND 12;
+
+-- SELECT Student_id, Student_fname, Student_lname, Years_of_exp, Student_company, Location, Source_of_joining
+-- FROM students
+-- WHERE Years_of_exp NOT BETWEEN 8 AND 12;
+
+-- SELECT Student_id, Student_fname, Student_lname, Years_of_exp, Student_company, Location, Source_of_joining
+-- FROM students
+-- WHERE Student_company = 'Walmart' OR Student_company = 'Flipkart' OR Student_company = 'Microsoft';
