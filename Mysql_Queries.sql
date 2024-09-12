@@ -411,6 +411,10 @@ FROM courses;
 
 -- =================================================== JOINS ============================================================================
 
+-- SELECT students.Student_fname, students.Student_lname, courses.Course_name
+-- FROM students
+-- JOIN courses
+-- ON students.Selected_course = courses.course_id;
 
 
 
