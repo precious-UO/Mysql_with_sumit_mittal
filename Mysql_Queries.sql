@@ -383,3 +383,41 @@ FROM courses;
 -- SELECT Student_id, Student_fname, Student_lname, Years_of_exp, Student_company, Location, Source_of_joining
 -- FROM students
 -- WHERE Student_company IN ('Walmart','Flipkart', 'Microsoft');
+
+
+-- =========================================================== CASE STATEMENTS =======================================================================
+
+-- SELECT course_id, course_name, course_fee,
+	-- CASE
+		-- WHEN course_duration_months > 4 THEN 'Masters'
+        -- ELSE 'Diploma'
+    -- END AS Course_type
+-- FROM courses;
+
+-- SELECT Student_id, Student_fname, Student_lname, Student_company,
+	-- CASE
+		-- WHEN Student_company IN ('Microsoft', 'Flipkart', 'Walmart') THEN 'Product based'
+        -- ELSE 'Service based'
+	-- END AS Company_type
+-- FROM students;
+
+-- SELECT Student_id, Student_fname, Student_lname, Years_of_exp,
+	-- CASE
+		-- WHEN Years_of_exp >= 5 THEN 'Senior'
+        -- WHEN Years_of_exp BETWEEN 3 AND 4 THEN 'MID LEVEL'
+        -- ELSE 'Junior'
+    -- END AS Exp_level
+-- FROM students;
+
+-- =================================================== JOINS ============================================================================
+
+
+
+
+
+
+
+
+
+
+		
