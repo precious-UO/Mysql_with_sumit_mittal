@@ -426,6 +426,8 @@ FROM courses;
 -- JOIN courses
 -- ON students.Selected_course = courses.course_id;
 
+-- SHOW TABLES;
+
 
 
 
