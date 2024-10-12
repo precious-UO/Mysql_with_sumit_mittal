@@ -71,5 +71,7 @@ If there is any violation, then the action is aborted.
 30. GROUP BY(): An agrregate function that groups data based on certain condiitions.
 31. MIN(): Finds the minimum value in a specified column.
 32. MAX(): Finds the maximum value in a specified column.
-33. SUM(): Findds the sum total of all values in a column.
+33. SUM(): Finds the sum total of all values in a column.
 34. AVG(): Finds the average of all values in a column.
+35. CASE: A conditional control structure that allows you to return specific values based on certain conditions. 
+          It can be used in various contexts, such as in SELECT, UPDATE, and ORDER BY clauses.
