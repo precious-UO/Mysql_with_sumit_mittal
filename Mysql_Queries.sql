@@ -401,12 +401,22 @@ FROM courses;
 	-- END AS Company_type
 -- FROM students;
 
+-- SELECT  Student_id, Student_fname, Student_lname, Years_of_exp,
+	-- CASE
+		-- WHEN Student_mname IS NULL THEN 'EMPTY CELLS'
+		-- ELSE 'NOT EMPTY CELLS'
+	-- END AS Missing_values
+-- FROM students;
+
 -- SELECT Student_id, Student_fname, Student_lname, Years_of_exp,
 	-- CASE
 		-- WHEN Years_of_exp >= 5 THEN 'Senior'
         -- WHEN Years_of_exp BETWEEN 3 AND 4 THEN 'MID LEVEL'
         -- ELSE 'Junior'
     -- END AS Exp_level
+-- FROM students;
+
+-- SELECT Student_id, Student_fname, Student_mname, Student_lname, Years_of_exp
 -- FROM students;
 
 -- =================================================== JOINS ============================================================================
